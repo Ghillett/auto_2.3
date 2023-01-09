@@ -11,14 +11,15 @@ public class PostmanEchoTest {
 // Предусловия
         given()
                 .baseUri("https://postman-echo.com")
-                .body("correct data") // отправляемые данные (заголовки и query можно выставлять аналогично)
+                .contentType("text/plain; charset=UTF-8")
+                .body("текст на кириллице") // отправляемые данные (заголовки и query можно выставлять аналогично)
 // Выполняемые действия
                 .when()
                 .post("/post")
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("wrong data"))
+                .body("data", equalTo("текст на кириллице"))
         ;
     }
 }
