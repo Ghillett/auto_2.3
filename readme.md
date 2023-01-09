@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/6qyr7pk790nom5j4/branch/main?svg=true)](https://ci.appveyor.com/project/Ghillett/auto-2-3/branch/main)
